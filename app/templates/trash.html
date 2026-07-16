@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% block content %}
+    <h1>Trash</h1>
+    <p>This is where deleted tasks will be displayed.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in trash_data %}
+           <tr>
+                <td>{{i.title}}</td>
+                <td>{{i.desc}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

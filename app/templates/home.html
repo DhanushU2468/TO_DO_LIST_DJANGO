@@ -1,0 +1,30 @@
+
+{% extends 'main.html' %}
+{% load static %}
+ 
+{% block content %}
+    <h1>Tasks are listed below</h1>
+     <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Complete</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in data %}
+           <tr>
+                <td>{{i.title}}</td>
+                <td>{{i.desc}}</td>
+                <td><a href="{% url 'update' i.id %}">Update</a></td>
+                <td><a href="{% url 'completed' i.id %}">Complete</a></td>
+                <td><a href="{% url 'hdelete' i.id %}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
