@@ -346,11 +346,18 @@ git push origin feature-name
 This project is open-source and available under the **MIT License**.
 
 ---
+<<<<<<< HEAD
 # Docker
 docker build -t todo_list .
+=======
+>>>>>>> 99b37b7702051fe7ecd471c904440cecbee13d1f
 
 # 👨‍💻 Author
 
 **Developed with ❤️ using Django**
 
 If you found this project helpful, consider giving it a ⭐ on GitHub!
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99b37b7702051fe7ecd471c904440cecbee13d1f
